@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <BrowserView>
-        <BrowserMap />
+        <GoogleSignUp />
       </BrowserView>
       <MobileView>
         <BrowserRouter>
@@ -25,6 +25,7 @@ function App() {
             <Route path="/schedule/edit" element={<EditSchedule />} />
             <Route path="/schedule/show" element={<ShowSchedule />} />
             <Route path="/schedule/show2" element={<EditDummy />} />
+            <Route path="/login" element={<GoogleSignUp />} />
           </Routes>
         </BrowserRouter>
       </MobileView>
